@@ -10,24 +10,24 @@ var multiplier =1;
 
 var strokeWidth =10;
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
   button = createButton('Switch Random On');
   button.mousePressed(toggleRandom);
 
   slider = createSlider(0, TWO_PI, PI / 4, 0.01);
-  slider.style('width', '400px');
+  slider.style('width', '600px');
 
 }
 function draw() {
   
   background(51);
   
-  translate(200,height);
+  translate(300,height);
  
 
   stroke(0,255,0);
   angle=slider.value();
-  branch(100);
+  branch(150);
   
 }
  
@@ -44,7 +44,7 @@ function branch(len){
 
 
   
-  if(len>40) {
+  if(len>60) {
   stroke(102,51,0);
   }
   else{
